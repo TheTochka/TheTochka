@@ -1,0 +1,320 @@
+openapi: 3.0.3
+info:
+  title: Partner API — интеграция VPN-провайдера с маркетплейсом
+  description: |
+    Маркетплейс вызывает **ваш** сервер по HTTPS после успешной оплаты заказа.
+    Базовый URL (`partnerApiUrl`) и секрет (`partnerApiToken`) хранятся у оператора маркетплейса в Firestore: `provider_credentials/{providerId}`.
+
+    Подробное пошаговое руководство: [PARTNER_ONBOARDING.md](../PARTNER_ONBOARDING.md)  
+    Краткая спецификация: [PARTNER_API.md](../PARTNER_API.md)
+  version: "1.0.0"
+  contact:
+    name: Оператор маркетплейса
+    url: https://example.com
+
+servers:
+  - url: https://partner-api.example.com
+    description: |
+      Замените на ваш публичный HTTPS origin (без завершающего `/`).
+      Все пути ниже — относительно этого URL.
+
+tags:
+  - name: Health
+    description: Проверка доступности перед продакшеном и для мониторинга.
+  - name: Subscriptions
+    description: Создание и управление подписками после оплаты.
+
+security:
+  - PartnerToken: []
+
+paths:
+  /partner/v1/health:
+    get:
+      tags: [Health]
+      summary: Health check
+      description: |
+        Должен отвечать быстро (рекомендация: до 3 с). Тот же заголовок `X-Partner-Token`, что и для боевых методов.
+      operationId: partnerHealth
+      responses:
+        "200":
+          description: Сервис доступен.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+              examples:
+                ok:
+                  value:
+                    status: ok
+                    version: "1.0"
+                    inbounds_count: 3
+                    active_clients: 150
+        "401":
+          description: Неверный или отсутствующий `X-Partner-Token`.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /partner/v1/tariffs:
+    get:
+      tags: [Subscriptions]
+      summary: Каталог тарифов (синхронизация с маркетплейсом)
+      description: |
+        Портал провайдера на стороне маркетплейса вызывает этот метод и перезаписывает `providers/{id}/tariffs` в Firestore.
+        См. [PARTNER_API.md](../PARTNER_API.md) §5.
+      operationId: partnerTariffsList
+      responses:
+        "200":
+          description: Список тарифов.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [tariffs]
+                properties:
+                  tariffs:
+                    type: array
+                    items:
+                      type: object
+                      additionalProperties: true
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /partner/v1/subscription/create:
+    post:
+      tags: [Subscriptions]
+      summary: Создать подписку после оплаты
+      description: |
+        Вызывается маркетплейсом, когда заказ переведён в оплаченный статус.
+        Поле `tariff_id` **должно** совпадать с ID документа тарифа в каталоге маркетплейса (`providers/{providerId}/tariffs/{tariff_id}`).
+      operationId: partnerSubscriptionCreate
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateSubscriptionRequest"
+            examples:
+              minimal:
+                value:
+                  order_id: ord_abc123
+                  tariff_id: pro
+                  email: user@example.com
+              full:
+                value:
+                  order_id: ord_abc123
+                  tariff_id: pro
+                  email: user@example.com
+                  protocol: vless
+                  comment: "VPN Маркетплейс"
+                  payment_id: pay_12345
+                  payment_method: sbp
+                  payment_amount: 299
+      responses:
+        "200":
+          description: |
+            Успех **или** бизнес-ошибка в теле JSON (`status: error`) при HTTP 200 — оба варианта обрабатываются маркетплейсом.
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: "#/components/schemas/CreateSubscriptionSuccess"
+                  - $ref: "#/components/schemas/PartnerBusinessError"
+              examples:
+                success:
+                  value:
+                    status: success
+                    subscription_id: sub_xyz789
+                    subscription_url: https://sub.example.com/token
+                    expires_at: "2026-05-13T00:00:00.000Z"
+                    config:
+                      protocol: vless
+                      uuid: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+                      address: server1.provider.com
+                      port: 443
+                legacyId:
+                  summary: Legacy — вместо subscription_id допускается поле id
+                  value:
+                    id: sub_legacy_1
+                    subscription_url: https://sub.example.com/u1
+                businessError:
+                  value:
+                    status: error
+                    error_code: tariff_not_found
+                    message: Tariff pro is not available
+        "4XX":
+          description: Ошибка на уровне HTTP (допустимо; маркетплейс зафиксирует сбой провижнинга).
+        "5XX":
+          description: Временная ошибка; возможны повторные запросы с экспоненциальной задержкой.
+
+  /partner/v1/subscription/{subscription_id}:
+    parameters:
+      - $ref: "#/components/parameters/SubscriptionId"
+    get:
+      tags: [Subscriptions]
+      summary: Статус подписки (опционально для MVP)
+      description: Формат ответа на усмотрение провайдера; маркетплейс в текущей версии может не вызывать.
+      operationId: partnerSubscriptionGet
+      responses:
+        "200":
+          description: Подписка найдена.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "404":
+          description: Подписка не найдена.
+
+    delete:
+      tags: [Subscriptions]
+      summary: Отмена / удаление подписки (опционально)
+      description: Вызывается маркетплейсом при необходимости отмены; в MVP может не использоваться.
+      operationId: partnerSubscriptionDelete
+      responses:
+        "200":
+          description: Успех.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+components:
+  securitySchemes:
+    PartnerToken:
+      type: apiKey
+      in: header
+      name: X-Partner-Token
+      description: |
+        Секрет провайдера. Должен совпадать с `partnerApiToken` в `provider_credentials` у оператора маркетплейса.
+        Передавайте только по TLS; не публикуйте в клиентском приложении.
+
+  parameters:
+    SubscriptionId:
+      name: subscription_id
+      in: path
+      required: true
+      schema:
+        type: string
+      description: Идентификатор подписки, ранее возвращённый в `subscription_id` или `id`.
+
+  responses:
+    Unauthorized:
+      description: Неверный или отсутствующий токен.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+
+  schemas:
+    HealthResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          example: ok
+        version:
+          type: string
+          example: "1.0"
+        inbounds_count:
+          type: integer
+          minimum: 0
+        active_clients:
+          type: integer
+          minimum: 0
+      additionalProperties: true
+
+    CreateSubscriptionRequest:
+      type: object
+      required: [order_id, tariff_id, email]
+      properties:
+        order_id:
+          type: string
+          description: Уникальный ID заказа в маркетплейсе (для логов и идемпотентности у вас на стороне).
+        tariff_id:
+          type: string
+          description: ID тарифа, согласованный с каталогом маркетплейса.
+        email:
+          type: string
+          format: email
+          description: Email покупателя.
+        protocol:
+          type: string
+          description: Предпочитаемый протокол (например vless, wireguard).
+          maxLength: 32
+        comment:
+          type: string
+          description: Метка источника / внутренняя заметка.
+          maxLength: 500
+        payment_id:
+          type: string
+          description: Идентификатор платежа в платёжной системе (передаётся маркетплейсом для аудита на стороне провайдера).
+          maxLength: 128
+        payment_method:
+          type: string
+          description: Способ оплаты (например sbp, card_ru, crypto).
+          maxLength: 64
+        payment_amount:
+          type: number
+          description: Сумма оплаты в рублях.
+          minimum: 0
+
+    CreateSubscriptionSuccess:
+      type: object
+      description: Успешное создание; `subscription_id` или legacy-поле `id` обязательно хотя бы одно.
+      properties:
+        status:
+          type: string
+          enum: [success]
+        subscription_id:
+          type: string
+        id:
+          type: string
+          description: Legacy-алиас для subscription_id.
+        subscription_url:
+          type: string
+          format: uri
+          description: Ссылка на подписку (часто показывается клиенту).
+        expires_at:
+          type: string
+          format: date-time
+          description: ISO 8601.
+        config:
+          type: object
+          description: Произвольный объект с параметрами подключения (для письма и UI).
+          additionalProperties: true
+      additionalProperties: true
+
+    PartnerBusinessError:
+      type: object
+      required: [status, error_code]
+      properties:
+        status:
+          type: string
+          enum: [error]
+        error_code:
+          type: string
+          enum:
+            - tariff_not_found
+            - capacity_full
+            - invalid_request
+            - unauthorized
+          description: Код для учёта и поддержки.
+        message:
+          type: string
+          description: Человекочитаемое описание.
+
+    ErrorResponse:
+      type: object
+      description: Типичный ответ при HTTP 401 и т.п. (точная схема может отличаться).
+      additionalProperties: true
