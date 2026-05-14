@@ -1,29 +1,1139 @@
-# TheTochka
+<!DOCTYPE html>
+<html lang="ru" data-github-repo="https://github.com/TheTochka/TheTochka" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
 
-**Мобильный маркетплейс VPN-провайдеров** для iOS и Android: каталог и сравнение условий, отзывы пользователей, запрос коммерческого предложения, поддержка.
+  <!-- ══ SEO PRIMARY ══ -->
+  <title>TheTochka — маркетплейс VPN: каталог, отзывы, сравнение провайдеров | iOS и Android</title>
+  <meta name="description"
+    content="TheTochka — мобильный маркетплейс VPN-провайдеров для iOS и Android. Каталог, сравнение условий, отзывы пользователей, запрос КП, чат поддержки. Найдите лучший VPN для бизнеса и личного использования." />
+  <meta name="keywords"
+    content="VPN маркетплейс, сравнение VPN провайдеров, каталог VPN, лучший VPN, отзывы VPN, VPN для iOS, VPN для Android, корпоративный VPN, купить VPN подписку, выбрать VPN, VPN приложение, TheTochka" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://thetochka.com/" />
 
----
+  <!-- ══ OPEN GRAPH ══ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="ru_RU" />
+  <meta property="og:site_name"   content="TheTochka" />
+  <meta property="og:title"       content="TheTochka — маркетплейс VPN: каталог и сравнение провайдеров" />
+  <meta property="og:description" content="Найдите лучший VPN за 2 минуты: каталог провайдеров, реальные отзывы, сравнение цен. Приложение для iOS и Android." />
+  <meta property="og:url"         content="https://thetochka.com/" />
+  <meta property="og:image"       content="https://thetochka.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-## Сайт и документация
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="TheTochka — маркетплейс VPN" />
+  <meta name="twitter:description" content="Каталог VPN-провайдеров, сравнение условий, отзывы. Одно приложение вместо часов поиска." />
+  <meta name="twitter:image"       content="https://thetochka.com/og-image.png" />
 
-| Что | Ссылка |
-|-----|--------|
-| **Лендинг (GitHub Pages)** | [thetochka.github.io/TheTochka](https://thetochka.github.io/TheTochka/) — после включения Pages в настройках репозитория (*Settings → Pages → Branch `main` / folder `docs`*). |
-| Исходник лендинга | [`docs/index.html`](docs/index.html) |
-| Документация в репозитории | папка [`docs/`](docs/) — API, чеклисты, юридические тексты, OpenAPI |
+  <!-- ══ JSON-LD: SoftwareApplication ══ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MobileApplication",
+    "name":"TheTochka — маркетплейс VPN",
+    "alternateName":"TheTochka",
+    "description":"Мобильный маркетплейс VPN-провайдеров: каталог, сравнение условий, отзывы пользователей, запрос коммерческого предложения и поддержка в одном приложении для iOS и Android.",
+    "url":"https://thetochka.com/",
+    "applicationCategory":"UtilitiesApplication",
+    "operatingSystem":"iOS, Android",
+    "inLanguage":"ru",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"},
+    "publisher":{
+      "@type":"Organization",
+      "name":"TheTochka",
+      "url":"https://thetochka.com/",
+      "email":"support@thetochka.com",
+      "sameAs":["https://play.google.com/store/apps/details?id=com.direct.thetochka"]
+    }
+  }
+  </script>
 
----
+  <!-- ══ JSON-LD: FAQPage ══ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Что такое TheTochka?","acceptedAnswer":{"@type":"Answer","text":"TheTochka — мобильный маркетплейс VPN-провайдеров для iOS и Android. Приложение помогает сравнить провайдеров, прочитать отзывы и связаться с выбранным сервисом напрямую."}},
+      {"@type":"Question","name":"Как выбрать VPN через TheTochka?","acceptedAnswer":{"@type":"Answer","text":"Откройте каталог, примените фильтры по цене и параметрам, изучите карточку с отзывами и запросите коммерческое предложение прямо из приложения."}},
+      {"@type":"Question","name":"TheTochka продаёт VPN напрямую?","acceptedAnswer":{"@type":"Answer","text":"Нет. TheTochka — информационный агрегатор и каталог. Договор, оплата и поддержка подключения — на стороне выбранного провайдера."}},
+      {"@type":"Question","name":"Приложение платное?","acceptedAnswer":{"@type":"Answer","text":"Базовый доступ к каталогу бесплатен. Подписка TheTochka Premium открывает расширенные фильтры; оплата через App Store или Google Play."}},
+      {"@type":"Question","name":"Где скачать TheTochka?","acceptedAnswer":{"@type":"Answer","text":"Android: Google Play (com.direct.thetochka). iOS: App Store по запросу TheTochka."}}
+    ]
+  }
+  </script>
 
-## Скачать приложение
+  <!-- ══ JSON-LD: BreadcrumbList ══ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"TheTochka","item":"https://thetochka.com/"},
+      {"@type":"ListItem","position":2,"name":"Приложение","item":"https://thetochka.com/app/"}
+    ]
+  }
+  </script>
 
-- [Google Play](https://play.google.com/store/apps/details?id=com.direct.thetochka)
-- [App Store](https://apps.apple.com/us/search?term=TheTochka) (поиск по названию)
-- Сайт продукта: [thetochka.com](https://thetochka.com/)
+  <!-- ══ FONTS ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 
----
+  <style>
+    /* ══════════════════════════
+       TOKENS — DARK (default)
+    ══════════════════════════ */
+    :root, [data-theme="dark"] {
+      --bg0:      #07080c;
+      --bg1:      #0d1018;
+      --card:     rgba(16, 20, 32, 0.78);
+      --card-s:   #0e1220;
+      --text:     #edf0f6;
+      --muted:    #7a8499;
+      --line:     rgba(255,255,255,0.077);
+      --accent:   #4f8aff;
+      --accent2:  #5ef5bb;
+      --accent3:  #ff6b6b;
+      --warn:     #ffc66d;
+      --r:        16px;
+      --font:     "DM Sans", ui-sans-serif, system-ui, sans-serif;
+      --display:  "Syne", var(--font);
+      --mono:     "JetBrains Mono", ui-monospace, monospace;
+      --sh:       0 28px 90px rgba(0,0,0,0.55);
+      --sh-sm:    0 6px 24px rgba(0,0,0,0.38);
+      --term-bg:  #080a10;
+    }
 
-## Репозиторий
+    /* ══════════════════════════
+       TOKENS — LIGHT
+    ══════════════════════════ */
+    [data-theme="light"] {
+      --bg0:      #f2f4fa;
+      --bg1:      #ffffff;
+      --card:     rgba(255,255,255,0.84);
+      --card-s:   #ffffff;
+      --text:     #0e1220;
+      --muted:    #4d5468;
+      --line:     rgba(0,0,0,0.07);
+      --accent:   #1a4fd6;
+      --accent2:  #0aaa72;
+      --accent3:  #d63a3a;
+      --warn:     #996800;
+      --sh:       0 20px 64px rgba(10,18,50,0.13);
+      --sh-sm:    0 4px 16px rgba(10,18,50,0.09);
+      --term-bg:  #14161e;
+    }
 
-Здесь опубликованы **публичная витрина проекта** (лендинг и документация в `docs/`). Исходный код приложения ведётся в отдельном приватном рабочем репозитории.
+    /* ══════════════════════════
+       RESET
+    ══════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font);
+      font-size: 1.02rem;
+      color: var(--text);
+      background: var(--bg0);
+      line-height: 1.62;
+      min-height: 100vh;
+      transition: background .3s, color .3s;
+    }
+    h1,h2,h3,h4 { font-family: var(--display); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a.ext::after { content: " ↗"; font-size: .72em; opacity: .65; }
+    code { font-family: var(--mono); font-size: .87em; background: rgba(79,138,255,.11); padding: .12em .4em; border-radius: 5px; }
+    .skip { position:absolute; left:-9999px; }
+    .skip:focus { position:fixed; left:1rem; top:1rem; padding:.5rem 1rem; background:var(--accent); color:#fff; border-radius:8px; z-index:9999; }
 
-Вопросы по продукту и партнёрству: [support@thetochka.com](mailto:support@thetochka.com)
+    /* ══════════════════════════
+       BACKGROUNDS
+    ══════════════════════════ */
+    .bg-mesh {
+      position:fixed; inset:0; z-index:-2;
+      background:
+        radial-gradient(1400px 700px at 5% -15%, rgba(79,138,255,.3), transparent 55%),
+        radial-gradient(800px 500px at 95% 5%,  rgba(94,245,187,.15), transparent 50%),
+        radial-gradient(600px 400px at 80% 90%, rgba(79,138,255,.09), transparent 50%),
+        linear-gradient(175deg, var(--bg0) 0%, var(--bg1) 45%, var(--bg0) 100%);
+    }
+    .bg-grid {
+      position:fixed; inset:0; z-index:-1; opacity:.28;
+      background-image: linear-gradient(var(--line) 1px, transparent 1px),
+                        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: radial-gradient(ellipse 90% 55% at 50% 10%, black, transparent);
+    }
+
+    /* ══════════════════════════
+       LAYOUT
+    ══════════════════════════ */
+    .wrap { max-width: 1060px; margin: 0 auto; padding: 0 1.25rem 6rem; }
+
+    /* ══════════════════════════
+       NAV
+    ══════════════════════════ */
+    .topnav {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--bg0) 80%, transparent);
+      border-bottom: 1px solid var(--line);
+      transition: background .3s;
+    }
+    .topnav-inner {
+      max-width: 1060px; margin: 0 auto;
+      padding: .6rem 1.25rem;
+      display: flex; align-items: center;
+      gap: .5rem 1.2rem;
+      justify-content: space-between;
+    }
+    .nav-left  { display:flex; align-items:center; gap:.6rem; }
+    .brand     { font-family:var(--display); font-weight:800; font-size:.98rem; letter-spacing:-.03em; color:var(--text); }
+    .brand span{ color:var(--accent); }
+
+    .topnav-links { display:flex; flex-wrap:wrap; gap:.3rem .8rem; align-items:center; }
+    .topnav-links a { font-size:.8rem; font-weight:600; color:var(--muted); transition:color .2s; }
+    .topnav-links a:hover { color:var(--text); text-decoration:none; }
+    .nav-cta {
+      display:inline-flex; align-items:center;
+      padding:.38rem .9rem; border-radius:8px;
+      background:var(--accent); color:#fff !important;
+      font-size:.8rem; font-weight:700;
+      transition:filter .2s;
+    }
+    .nav-cta:hover { filter:brightness(1.12); text-decoration:none; }
+
+    /* Icon button (theme toggle) */
+    .icon-btn {
+      background:none; border:1px solid var(--line); color:var(--muted);
+      cursor:pointer; padding:.3rem; border-radius:7px;
+      display:flex; align-items:center; justify-content:center;
+      transition:.2s;
+    }
+    .icon-btn:hover { color:var(--accent); border-color:var(--accent); }
+    .icon-btn svg   { width:17px; height:17px; }
+    [data-theme="dark"]  .icon-sun  { display:none; }
+    [data-theme="dark"]  .icon-moon { display:block; }
+    [data-theme="light"] .icon-sun  { display:block; }
+    [data-theme="light"] .icon-moon { display:none; }
+
+    /* Hamburger */
+    .menu-btn {
+      display:none; background:none;
+      border:1px solid var(--line); color:var(--muted);
+      padding:.35rem .5rem; border-radius:7px; cursor:pointer;
+      font-size:1rem; line-height:1;
+    }
+    @media (max-width:820px) {
+      .menu-btn { display:block; }
+      .topnav-links {
+        display:none; position:absolute; top:100%; left:0; right:0;
+        background:color-mix(in srgb, var(--bg0) 96%, transparent);
+        backdrop-filter:blur(20px);
+        padding:1rem 1.25rem; border-bottom:1px solid var(--line);
+        flex-direction:column; align-items:flex-start; gap:.55rem;
+      }
+      .topnav-links.open { display:flex; }
+    }
+
+    /* ══════════════════════════
+       HERO
+    ══════════════════════════ */
+    .hero { padding: 3.5rem 0 2.5rem; }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:.5rem;
+      font-size:.75rem; font-weight:700;
+      letter-spacing:.13em; text-transform:uppercase;
+      color:var(--accent2); margin-bottom:1.1rem;
+    }
+    .eyebrow .dot {
+      width:7px; height:7px; border-radius:50%;
+      background:var(--accent2); box-shadow:0 0 12px var(--accent2);
+      animation:pulse 2.6s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.75)} }
+
+    h1 {
+      font-size: clamp(2rem, 5.5vw, 3.4rem);
+      font-weight: 800; line-height: 1.06;
+      letter-spacing: -.035em; margin-bottom: 1rem;
+    }
+    h1 .hl {
+      background: linear-gradient(100deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-lead {
+      font-size: 1.15rem; color: var(--muted);
+      max-width: 56ch; margin-bottom: 1.75rem; line-height: 1.7;
+    }
+    .hero-cta { display:flex; flex-wrap:wrap; gap:.65rem; align-items:center; margin-bottom:1.5rem; }
+
+    /* Store badges (no emoji) */
+    .store-badges { display:flex; flex-wrap:wrap; gap:.55rem; margin-bottom:2rem; }
+    .store-badge {
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.45rem 1rem; border-radius:10px;
+      border:1px solid var(--line);
+      background:var(--card-s);
+      color:var(--text); font-size:.85rem; font-weight:600;
+      transition:border-color .2s, transform .2s;
+    }
+    .store-badge:hover { border-color:var(--accent); transform:translateY(-2px); text-decoration:none; }
+    .store-badge svg  { width:18px; height:18px; flex-shrink:0; }
+    .store-badge .sub { font-size:.68rem; font-weight:400; color:var(--muted); display:block; line-height:1.2; }
+    .store-badge .name{ font-size:.88rem; font-weight:700; display:block; line-height:1.2; }
+
+    .pill-row { display:flex; flex-wrap:wrap; gap:.45rem; }
+    .pill {
+      font-size:.77rem; font-weight:600;
+      padding:.28rem .7rem; border-radius:999px;
+      border:1px solid var(--line); color:var(--muted); background:var(--card);
+    }
+
+    /* ══════════════════════════
+       BUTTONS
+    ══════════════════════════ */
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:.4rem;
+      padding:.68rem 1.25rem; border-radius:12px;
+      font-family:var(--display); font-weight:700; font-size:.9rem;
+      border:1px solid var(--line); background:var(--card-s);
+      color:var(--text); cursor:pointer;
+      box-shadow:var(--sh-sm); transition:all .2s;
+    }
+    .btn:hover { text-decoration:none; filter:brightness(1.08); transform:translateY(-1px); }
+    .btn.primary { background:linear-gradient(135deg, var(--accent) 0%, #845cf5 100%); color:#fff; border-color:transparent; }
+    .btn.ghost   { background:transparent; box-shadow:none; }
+
+    /* ══════════════════════════
+       STATS BAR
+    ══════════════════════════ */
+    .stats-bar {
+      display:grid; grid-template-columns:repeat(2,1fr);
+      gap:1px; background:var(--line);
+      border-radius:var(--r); border:1px solid var(--line);
+      overflow:hidden; margin-top:3rem; box-shadow:var(--sh-sm);
+    }
+    @media (min-width:640px) { .stats-bar { grid-template-columns:repeat(4,1fr); } }
+    .stat-cell { background:var(--card-s); padding:1.5rem 1.25rem; text-align:center; }
+    .stat-num {
+      font-family:var(--display); font-size:2.3rem; font-weight:800;
+      letter-spacing:-.04em; line-height:1;
+      background:linear-gradient(120deg, var(--text), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .stat-label { font-size:.8rem; color:var(--muted); margin-top:.35rem; font-weight:500; }
+
+    /* ══════════════════════════
+       SECTIONS
+    ══════════════════════════ */
+    section {
+      margin-top:3rem; padding:1.85rem 1.75rem;
+      border-radius:var(--r); border:1px solid var(--line);
+      background:var(--card); backdrop-filter:blur(12px);
+      box-shadow:var(--sh);
+    }
+    section > .sec-head {
+      font-size:.75rem; font-weight:700;
+      letter-spacing:.14em; text-transform:uppercase;
+      color:var(--muted); margin-bottom:1.1rem;
+    }
+
+    /* ══════════════════════════
+       BENTO
+    ══════════════════════════ */
+    .bento { display:grid; gap:.85rem; }
+    @media (min-width:560px) { .bento.c2 { grid-template-columns:1fr 1fr; } }
+    @media (min-width:700px) { .bento.c3 { grid-template-columns:repeat(3,1fr); } }
+    .tile {
+      padding:1.15rem 1.2rem; border-radius:14px;
+      border:1px solid var(--line);
+      background:color-mix(in srgb, var(--card-s) 65%, transparent);
+      transition:border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .tile:hover { border-color:color-mix(in srgb,var(--accent) 55%,transparent); transform:translateY(-3px); box-shadow:var(--sh-sm); }
+    .tile h3 { font-size:.98rem; font-weight:700; margin-bottom:.4rem; }
+    .tile p  { font-size:.88rem; color:var(--muted); line-height:1.55; }
+
+    /* ══════════════════════════
+       PERSONAS
+    ══════════════════════════ */
+    .persona-grid { display:grid; gap:.85rem; }
+    @media (min-width:640px) { .persona-grid { grid-template-columns:repeat(3,1fr); } }
+    .persona {
+      padding:1.25rem; border-radius:14px;
+      border:1px solid var(--line);
+      background:color-mix(in srgb, var(--card-s) 55%, transparent);
+    }
+    .persona-label { font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent2); margin-bottom:.65rem; }
+    .persona h3 { font-size:1rem; font-weight:700; margin-bottom:.4rem; }
+    .persona p  { font-size:.88rem; color:var(--muted); line-height:1.55; }
+    .persona ul { padding-left:1.1rem; margin-top:.5rem; }
+    .persona li { font-size:.85rem; color:var(--muted); margin:.25rem 0; }
+
+    /* ══════════════════════════
+       COMPARISON TABLE
+    ══════════════════════════ */
+    .compare-wrap { overflow-x:auto; margin-top:1rem; }
+    table.compare { width:100%; border-collapse:collapse; font-size:.88rem; }
+    table.compare th {
+      padding:.65rem .85rem; text-align:left;
+      font-family:var(--display); font-weight:700; font-size:.85rem;
+      border-bottom:2px solid var(--line); color:var(--text);
+    }
+    table.compare th.hl { background:color-mix(in srgb, var(--accent) 11%, transparent); color:var(--accent); border-bottom-color:var(--accent); }
+    table.compare td   { padding:.6rem .85rem; border-bottom:1px solid var(--line); color:var(--muted); vertical-align:middle; }
+    table.compare td:first-child { font-weight:600; color:var(--text); }
+    table.compare td.hl { background:color-mix(in srgb, var(--accent) 6%, transparent); color:var(--accent); font-weight:600; }
+    table.compare tr:last-child td { border-bottom:0; }
+    .chk { color:var(--accent2); } .crs { color:var(--accent3); } .mby { color:var(--warn); }
+
+    /* ══════════════════════════
+       STEPS
+    ══════════════════════════ */
+    .steps { display:grid; gap:.85rem; margin-top:.5rem; }
+    @media (min-width:640px) { .steps { grid-template-columns:repeat(4,1fr); } }
+    .step {
+      padding:1.25rem 1.1rem; border-radius:14px;
+      border:1px solid var(--line);
+      background:color-mix(in srgb, var(--card-s) 55%, transparent);
+    }
+    .step-num {
+      font-family:var(--display); font-size:2rem; font-weight:800;
+      letter-spacing:-.05em; line-height:1;
+      color:color-mix(in srgb, var(--accent) 32%, transparent); margin-bottom:.65rem;
+    }
+    .step h3 { font-size:.95rem; font-weight:700; margin-bottom:.4rem; }
+    .step p   { font-size:.85rem; color:var(--muted); }
+
+    /* ══════════════════════════
+       TERMINAL
+    ══════════════════════════ */
+    .terminal {
+      background:var(--term-bg); border:1px solid var(--line);
+      border-radius:12px; padding:1rem; margin-top:1.1rem; position:relative;
+    }
+    .terminal-header { display:flex; gap:6px; margin-bottom:.85rem; }
+    .t-dot { width:10px; height:10px; border-radius:50%; background:var(--line); }
+    .t-dot:nth-child(1) { background:#ff5f57; }
+    .t-dot:nth-child(2) { background:#febc2e; }
+    .t-dot:nth-child(3) { background:#28c840; }
+    .terminal pre { margin:0; font-family:var(--mono); font-size:.88rem; color:var(--accent2); white-space:pre-wrap; }
+    .copy-btn {
+      position:absolute; top:.75rem; right:.75rem;
+      background:rgba(255,255,255,.07); border:none; color:var(--muted);
+      padding:.28rem .65rem; border-radius:6px; font-size:.73rem;
+      cursor:pointer; font-family:var(--font); font-weight:600; transition:.2s;
+    }
+    .copy-btn:hover { background:var(--accent); color:#fff; }
+
+    /* ══════════════════════════
+       STACK TAGS
+    ══════════════════════════ */
+    .stack-tags { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.75rem; }
+    .tag {
+      font-size:.82rem; font-weight:600;
+      padding:.3rem .75rem; border-radius:999px;
+      border:1px solid var(--line);
+      background:color-mix(in srgb, var(--card-s) 80%, transparent);
+      color:var(--text);
+    }
+    .tag.a { border-color:color-mix(in srgb, var(--accent) 50%, var(--line)); color:var(--accent); }
+    .tag.g { border-color:color-mix(in srgb, var(--accent2) 50%, var(--line)); color:var(--accent2); }
+
+    /* ══════════════════════════
+       LINKS GRID
+    ══════════════════════════ */
+    .link-grid { display:grid; gap:.55rem; margin-top:.85rem; }
+    @media (min-width:560px) { .link-grid.c2 { grid-template-columns:1fr 1fr; } }
+    .link-item {
+      display:flex; flex-direction:column; gap:.15rem;
+      padding:.8rem .9rem; border-radius:12px;
+      border:1px solid var(--line);
+      background:color-mix(in srgb, var(--bg1) 40%, transparent);
+      transition:border-color .2s;
+    }
+    .link-item:hover { border-color:color-mix(in srgb, var(--accent) 40%, var(--line)); }
+    .link-item strong { font-size:.9rem; }
+    .link-item span   { font-size:.8rem; color:var(--muted); }
+    .link-item a      { font-weight:600; word-break:break-all; font-size:.88rem; }
+
+    /* ══════════════════════════
+       CONTACTS
+    ══════════════════════════ */
+    .contacts-grid { display:grid; gap:.65rem; margin-top:1rem; }
+    @media (min-width:520px) { .contacts-grid { grid-template-columns:1fr 1fr; } }
+    .contact {
+      padding:1rem 1.1rem; border-radius:12px;
+      border:1px solid var(--line);
+      background:color-mix(in srgb, var(--card-s) 70%, transparent);
+      transition:border-color .2s;
+    }
+    .contact:hover { border-color:var(--accent); }
+    .contact .role { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); margin-bottom:.3rem; }
+    .contact a { font-size:1rem; font-weight:600; }
+
+    /* ══════════════════════════
+       SEO PROSE
+    ══════════════════════════ */
+    .prose { font-size:.92rem; line-height:1.72; color:color-mix(in srgb, var(--text) 88%, var(--muted)); }
+    .prose p { margin:.8rem 0; }
+    .prose p:first-child { margin-top:0; }
+    .prose strong { color:var(--text); }
+    .prose h3 { font-size:1.05rem; font-weight:700; margin:1.5rem 0 .45rem; color:var(--text); }
+    .prose h3:first-of-type { margin-top:.5rem; }
+
+    /* ══════════════════════════
+       FAQ
+    ══════════════════════════ */
+    details {
+      border:1px solid var(--line); border-radius:12px;
+      padding:.8rem 1rem; margin:.5rem 0;
+      background:color-mix(in srgb, var(--bg1) 30%, transparent);
+      transition:border-color .2s;
+    }
+    details[open] { border-color:color-mix(in srgb, var(--accent) 55%, var(--line)); }
+    summary {
+      cursor:pointer; font-weight:650; font-size:.96rem;
+      list-style:none; display:flex; justify-content:space-between; align-items:center;
+    }
+    summary::after { content:"+"; font-size:1.2rem; color:var(--muted); transition:transform .2s; }
+    details[open] summary::after { transform:rotate(45deg); color:var(--accent); }
+    details[open] summary { margin-bottom:.55rem; color:var(--accent); }
+    details p { font-size:.92rem; color:var(--muted); line-height:1.6; }
+
+    /* ══════════════════════════
+       MOCKUP SCROLL
+    ══════════════════════════ */
+    .mockup-scroll { display:flex; gap:1rem; overflow-x:auto; padding-bottom:1rem; scroll-snap-type:x mandatory; }
+    .mockup-scroll::-webkit-scrollbar { height:5px; }
+    .mockup-scroll::-webkit-scrollbar-thumb { background:var(--line); border-radius:3px; }
+    .mockup {
+      flex:0 0 180px; height:380px; background:var(--bg0);
+      border:1px solid var(--line); border-radius:24px;
+      display:flex; align-items:center; justify-content:center;
+      color:var(--muted); font-size:.82rem; scroll-snap-align:start;
+      box-shadow:var(--sh-sm);
+    }
+
+    /* ══════════════════════════
+       REPO HINT
+    ══════════════════════════ */
+    #repo-hint {
+      font-size:.87rem; color:var(--muted); margin-top:1rem;
+      padding:.85rem 1rem; border-radius:12px;
+      border:1px dashed color-mix(in srgb, var(--warn) 50%, var(--line));
+      background:color-mix(in srgb, var(--warn) 8%, transparent);
+      display:none;
+    }
+    #repo-hint.visible { display:block; }
+
+    /* ══════════════════════════
+       STICKY CTA
+    ══════════════════════════ */
+    .sticky-cta {
+      position:fixed; bottom:1.25rem; left:50%;
+      transform:translateX(-50%) translateY(140%);
+      z-index:40;
+      display:flex; align-items:center; gap:.65rem;
+      padding:.65rem 1rem .65rem .85rem;
+      border-radius:16px;
+      background:color-mix(in srgb, var(--bg1) 92%, transparent);
+      border:1px solid var(--line);
+      backdrop-filter:blur(22px); box-shadow:var(--sh);
+      white-space:nowrap; font-size:.87rem; font-weight:600;
+      transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+    }
+    .sticky-cta.show { transform:translateX(-50%) translateY(0); }
+    .sticky-cta .s-label { color:var(--muted); font-size:.77rem; font-weight:500; }
+    .sticky-cta .s-btn {
+      display:inline-flex; align-items:center; gap:.35rem;
+      padding:.4rem .9rem; border-radius:9px;
+      background:var(--accent); color:#fff; font-size:.81rem; font-weight:700;
+    }
+    .sticky-cta .s-btn:hover { text-decoration:none; filter:brightness(1.1); }
+    .sticky-cta .s-close {
+      background:none; border:none; cursor:pointer;
+      color:var(--muted); font-size:1.1rem; line-height:1; padding:.1rem .2rem;
+    }
+    .sticky-cta .s-close:hover { color:var(--text); }
+
+    /* ══════════════════════════
+       FOOTER
+    ══════════════════════════ */
+    .site-footer {
+      margin-top:3.5rem; padding:2rem 0 3rem;
+      border-top:1px solid var(--line);
+      color:var(--muted); font-size:.87rem;
+    }
+    .site-footer nav { display:flex; flex-wrap:wrap; gap:.6rem 1.1rem; margin-bottom:.85rem; }
+    .footer-copy { margin-top:.75rem; font-size:.82rem; opacity:.55; }
+
+    /* ══════════════════════════
+       SCROLL REVEAL
+    ══════════════════════════ */
+    .fade-up { opacity:0; transform:translateY(22px); transition:opacity .55s ease, transform .55s ease; }
+    .fade-up.visible { opacity:1; transform:none; }
+    hr.shr { height:1px; background:var(--line); border:0; margin:1.25rem 0; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-grid"  aria-hidden="true"></div>
+
+  <!-- ══════ NAV ══════ -->
+  <nav class="topnav" aria-label="Разделы страницы">
+    <div class="topnav-inner">
+      <div class="nav-left">
+        <span class="brand">The<span>Tochka</span></span>
+        <button class="icon-btn" id="themeToggle" aria-label="Переключить тему">
+          <!-- sun -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <!-- moon -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
+      <div class="topnav-links" id="navLinks">
+        <a href="#about">О сервисе</a>
+        <a href="#audience">Для кого</a>
+        <a href="#features">Функции</a>
+        <a href="#compare">Сравнение</a>
+        <a href="#how">Как работает</a>
+        <a href="#premium">Premium</a>
+        <a href="#download">Скачать</a>
+        <a href="#legal">Документы</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#developers">Разработка</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta ext" href="https://play.google.com/store/apps/details?id=com.direct.thetochka">Скачать</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    <!-- ══════ HERO ══════ -->
+    <header class="hero" id="main">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Маркетплейс VPN-провайдеров</div>
+      <h1>Найдите лучший VPN<br><span class="hl">за 2 минуты</span></h1>
+      <p class="hero-lead">
+        Каталог VPN-провайдеров, реальные отзывы, сравнение цен и условий, запрос коммерческого предложения —
+        всё в одном приложении для <strong>iOS</strong> и <strong>Android</strong>.
+        Больше не нужно часами перебирать форумы и аффилиатные обзоры.
+      </p>
+
+      <!-- Store badges — no emoji, SVG icons -->
+      <div class="store-badges">
+        <a class="store-badge ext" href="https://play.google.com/store/apps/details?id=com.direct.thetochka" aria-label="Скачать в Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.35.2.76.22 1.12.06l11.34-6.55-2.46-2.46-9.99 9.0-.01-.05zM.5 1.83C.18 2.16 0 2.67 0 3.33v17.34c0 .66.18 1.17.5 1.5l.08.07 9.71-9.71v-.23L.58 1.76l-.08.07zm20.06 8.57l-2.71-1.56-2.77 2.77 2.77 2.77 2.73-1.57c.78-.45.78-1.97-.02-2.41zM4.3.18L15.64 6.73l-2.46 2.46L3.18.24C3.54.08 3.95.1 4.3.18z"/></svg>
+          <span><span class="sub">Скачать в</span><span class="name">Google Play</span></span>
+        </a>
+        <a class="store-badge ext" href="https://apps.apple.com/us/search?term=TheTochka" aria-label="Найти в App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span><span class="sub">Найти в</span><span class="name">App Store</span></span>
+        </a>
+        <a class="store-badge ext" href="https://thetochka.com/" aria-label="Сайт thetochka.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span><span class="sub">Открыть</span><span class="name">thetochka.com</span></span>
+        </a>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">Бесплатный каталог</span>
+        <span class="pill">Запрос КП провайдеру</span>
+        <span class="pill">Чат поддержки 24/7</span>
+        <span class="pill">TheTochka Premium</span>
+        <span class="pill">Flutter · Firebase · RevenueCat</span>
+        <span class="pill">iOS + Android</span>
+      </div>
+    </header>
+
+    <!-- ══════ STATS ══════ -->
+    <div class="stats-bar fade-up" role="region" aria-label="Ключевые показатели">
+      <div class="stat-cell"><div class="stat-num" data-target="50">0</div><div class="stat-label">Провайдеров в каталоге</div></div>
+      <div class="stat-cell"><div class="stat-num" data-target="1000" data-suffix="+">0</div><div class="stat-label">Отзывов пользователей</div></div>
+      <div class="stat-cell"><div class="stat-num" data-target="2">0</div><div class="stat-label">Платформы (iOS + Android)</div></div>
+      <div class="stat-cell"><div class="stat-num" data-target="24" data-suffix="/7">0</div><div class="stat-label">Поддержка в приложении</div></div>
+    </div>
+
+    <!-- ══════ ABOUT ══════ -->
+    <section id="about" aria-labelledby="about-h" class="fade-up">
+      <p class="sec-head" id="about-h">О сервисе</p>
+      <div class="prose">
+        <h3>Что такое TheTochka — VPN-маркетплейс нового поколения</h3>
+        <p>
+          <strong>TheTochka</strong> — первый в своём роде мобильный <strong>маркетплейс VPN-провайдеров</strong> для iOS и Android.
+          Приложение агрегирует предложения сервисов в удобный структурированный каталог: фильтрация по цене,
+          протоколам, юрисдикции и скорости, независимые отзывы и сравнение условий за несколько секунд.
+        </p>
+        <p>
+          В отличие от сайтов-агрегаторов, TheTochka — полноценное <strong>нативное приложение</strong>:
+          быстрый поиск, push-уведомления о новых провайдерах, синхронизация закладок между устройствами и прямой чат.
+        </p>
+        <p>
+          Важно для прозрачности: <strong>TheTochka не продаёт VPN-подключение напрямую</strong>.
+          Платформа предоставляет информацию, инструменты сравнения и каналы коммуникации —
+          договор и оплата остаются между вами и выбранным провайдером.
+        </p>
+        <h3>Почему TheTochka — лучший способ выбрать VPN</h3>
+        <p>
+          Рынок VPN огромен: сотни провайдеров с разными протоколами (WireGuard, OpenVPN, IKEv2), ценовыми моделями и SLA.
+          Самостоятельно обойти десятки сайтов — задача на несколько часов.
+          <strong>TheTochka сокращает это время до 2 минут</strong>: структурированный каталог,
+          верифицированные отзывы и запрос КП прямо из приложения.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════ AUDIENCE ══════ -->
+    <section id="audience" aria-labelledby="audience-h" class="fade-up">
+      <p class="sec-head" id="audience-h">Для кого TheTochka</p>
+      <div class="persona-grid">
+        <div class="persona">
+          <div class="persona-label">Частный пользователь</div>
+          <h3>Хочу надёжный VPN для себя</h3>
+          <p>Безопасный доступ к сайтам, защита в публичных Wi-Fi, стриминг без ограничений.</p>
+          <ul><li>Фильтр по цене и стране серверов</li><li>Отзывы перед покупкой</li><li>Пробный период у провайдера</li></ul>
+        </div>
+        <div class="persona">
+          <div class="persona-label">Бизнес / ИТ-администратор</div>
+          <h3>Нужен VPN для команды</h3>
+          <p>Подключение удалённых сотрудников, защита корпоративного трафика, соответствие требованиям безопасности.</p>
+          <ul><li>Запрос КП с нужными параметрами</li><li>Сравнение SLA и поддержки</li><li>Корпоративные тарифы</li></ul>
+        </div>
+        <div class="persona">
+          <div class="persona-label">Меняю провайдера</div>
+          <h3>Текущий VPN не устраивает</h3>
+          <p>Скорость упала, поддержка не отвечает или провайдер поднял цены — нужна быстрая альтернатива.</p>
+          <ul><li>Каталог альтернативных сервисов</li><li>Сравнение цен рядом</li><li>Рейтинги поддержки</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ FEATURES ══════ -->
+    <section id="features" aria-labelledby="features-h" class="fade-up">
+      <p class="sec-head" id="features-h">Возможности приложения</p>
+
+      <!-- Screenshots placeholder -->
+      <div class="mockup-scroll" style="margin-bottom:1.5rem">
+        <div class="mockup">Экран 1</div>
+        <div class="mockup">Экран 2</div>
+        <div class="mockup">Экран 3</div>
+        <div class="mockup">Экран 4</div>
+      </div>
+
+      <div class="bento c3">
+        <div class="tile"><h3>Каталог и умные фильтры</h3><p>Провайдеры с тегами по протоколу, юрисдикции, цене. Быстрый вход в нужный сегмент.</p></div>
+        <div class="tile"><h3>Отзывы и рейтинги</h3><p>Реальные оценки пользователей по скорости, надёжности и поддержке — до выбора, не после.</p></div>
+        <div class="tile"><h3>Запрос КП</h3><p>Заполните параметры — получите коммерческое предложение от провайдера напрямую.</p></div>
+        <div class="tile"><h3>Поддержка 24/7</h3><p>Чат с командой TheTochka и провайдерами. Технические вопросы, жалобы, уточнение условий.</p></div>
+        <div class="tile"><h3>TheTochka Premium</h3><p>Расширенные фильтры и приоритетный доступ. Оплата через App Store / Google Play.</p></div>
+        <div class="tile"><h3>Кросс-девайс синхронизация</h3><p>Закладки и история — доступны на всех устройствах через единый аккаунт.</p></div>
+        <div class="tile"><h3>Push и Remote Config</h3><p>Уведомления о новых провайдерах. Контроль версий через Firebase Remote Config.</p></div>
+        <div class="tile"><h3>Удаление данных</h3><p>Полное удаление аккаунта в приложении или по письму на delete@thetochka.com.</p></div>
+        <div class="tile"><h3>Публичный API</h3><p>Открытый API для партнёров и интеграций. OpenAPI-схема в репозитории.</p></div>
+      </div>
+    </section>
+
+    <!-- ══════ COMPARE ══════ -->
+    <section id="compare" aria-labelledby="compare-h" class="fade-up">
+      <p class="sec-head" id="compare-h">Сравнение способов выбрать VPN</p>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:.25rem">Почему маркетплейс удобнее, чем искать VPN самостоятельно или доверять рекламным обзорам.</p>
+      <div class="compare-wrap">
+        <table class="compare" role="table" aria-label="Сравнение способов выбора VPN">
+          <thead>
+            <tr>
+              <th>Критерий</th>
+              <th class="hl">TheTochka</th>
+              <th>Самостоятельный поиск</th>
+              <th>Блог-обзоры / партнёрки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Структурированный каталог</td><td class="hl"><span class="chk">✓</span> Да</td><td><span class="crs">✗</span> Нет</td><td><span class="mby">~</span> Частично</td></tr>
+            <tr><td>Независимые пользовательские отзывы</td><td class="hl"><span class="chk">✓</span> Да</td><td><span class="crs">✗</span> Надо искать</td><td><span class="crs">✗</span> Нет (аффилиат)</td></tr>
+            <tr><td>Прямой запрос КП для бизнеса</td><td class="hl"><span class="chk">✓</span> Да</td><td><span class="crs">✗</span> Нет</td><td><span class="crs">✗</span> Нет</td></tr>
+            <tr><td>Нативное мобильное приложение</td><td class="hl"><span class="chk">✓</span> iOS + Android</td><td><span class="crs">✗</span> Нет</td><td><span class="crs">✗</span> Нет</td></tr>
+            <tr><td>Чат поддержки</td><td class="hl"><span class="chk">✓</span> 24/7</td><td><span class="crs">✗</span> Нет</td><td><span class="crs">✗</span> Нет</td></tr>
+            <tr><td>Время на выбор провайдера</td><td class="hl">~2 минуты</td><td>2–5 часов</td><td>30–60 минут</td></tr>
+            <tr><td>Конфликт интересов / аффилиат</td><td class="hl"><span class="chk">✓</span> Нет</td><td>—</td><td><span class="crs">✗</span> Часто есть</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ══════ HOW ══════ -->
+    <section id="how" aria-labelledby="how-h" class="fade-up">
+      <p class="sec-head" id="how-h">Как это работает — 4 шага</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">01</div><h3>Открываете каталог</h3><p>Провайдеры с фильтрами по цене, протоколу и географии серверов.</p></div>
+        <div class="step"><div class="step-num">02</div><h3>Изучаете карточку</h3><p>Отзывы реальных пользователей, описание, тарифы, способы связи.</p></div>
+        <div class="step"><div class="step-num">03</div><h3>Связываетесь</h3><p>Запрашиваете КП, задаёте вопросы в чате или переходите к провайдеру.</p></div>
+        <div class="step"><div class="step-num">04</div><h3>Договор с провайдером</h3><p>Оплата и SLA — по правилам выбранного сервиса. TheTochka — информационная площадка.</p></div>
+      </div>
+    </section>
+
+    <!-- ══════ PREMIUM ══════ -->
+    <section id="premium" aria-labelledby="premium-h" class="fade-up">
+      <p class="sec-head" id="premium-h">TheTochka Premium</p>
+      <div class="prose">
+        <p>
+          <strong>TheTochka Premium</strong> — подписка для активных пользователей: расширенные фильтры каталога,
+          приоритетный доступ к новым провайдерам и функции для бизнес-сценариев.
+        </p>
+        <p>
+          Оплата через <strong>App Store</strong> или <strong>Google Play</strong>.
+          Учёт подписки — через <strong>RevenueCat</strong>. Отмена — в настройках аккаунта магазина в любое время.
+        </p>
+        <p>
+          Юридические детали:
+          <a class="ext" href="https://thetochka.com/terms.html">условия использования</a>,
+          <a class="ext" href="https://thetochka.com/refund.html">политика возвратов</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════ DOWNLOAD ══════ -->
+    <section id="download" aria-labelledby="download-h" class="fade-up">
+      <p class="sec-head" id="download-h">Скачать TheTochka</p>
+      <div class="prose" style="margin-bottom:1.25rem">
+        <p>
+          Приложение <strong>TheTochka — маркетплейс VPN</strong> доступно на Android в <strong>Google Play</strong>
+          (ID: <code>com.direct.thetochka</code>) и на iOS в <strong>App Store</strong>.
+          Установка бесплатна; базовый доступ к каталогу не требует регистрации.
+        </p>
+      </div>
+      <div class="store-badges">
+        <a class="store-badge ext" href="https://play.google.com/store/apps/details?id=com.direct.thetochka">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.35.2.76.22 1.12.06l11.34-6.55-2.46-2.46-9.99 9.0-.01-.05zM.5 1.83C.18 2.16 0 2.67 0 3.33v17.34c0 .66.18 1.17.5 1.5l.08.07 9.71-9.71v-.23L.58 1.76l-.08.07zm20.06 8.57l-2.71-1.56-2.77 2.77 2.77 2.77 2.73-1.57c.78-.45.78-1.97-.02-2.41zM4.3.18L15.64 6.73l-2.46 2.46L3.18.24C3.54.08 3.95.1 4.3.18z"/></svg>
+          <span><span class="sub">Скачать в</span><span class="name">Google Play</span></span>
+        </a>
+        <a class="store-badge ext" href="https://apps.apple.com/us/search?term=TheTochka">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span><span class="sub">Найти в</span><span class="name">App Store</span></span>
+        </a>
+      </div>
+      <p style="font-size:.85rem;color:var(--muted);margin-top:.85rem">
+        Прямая ссылка App Store появится после публикации iOS-сборки и настройки
+        <code>update_url_ios</code> в Firebase Remote Config.
+      </p>
+    </section>
+
+    <!-- ══════ LEGAL ══════ -->
+    <section id="legal" aria-labelledby="legal-h" class="fade-up">
+      <p class="sec-head" id="legal-h">Пользовательские документы</p>
+      <p style="color:var(--muted);font-size:.9rem;margin-bottom:.75rem">Публичные URL, которые приложение открывает из настроек и экранов согласия.</p>
+      <div class="link-grid c2">
+        <div class="link-item"><strong>Политика конфиденциальности</strong><a class="ext" href="https://thetochka.com/privacy.html">thetochka.com/privacy.html</a><span>Сбор, обработка и защита персональных данных.</span></div>
+        <div class="link-item"><strong>Пользовательское соглашение</strong><a class="ext" href="https://thetochka.com/terms.html">thetochka.com/terms.html</a><span>Правила использования сервиса.</span></div>
+        <div class="link-item"><strong>Поддержка</strong><a class="ext" href="https://thetochka.com/support.html">thetochka.com/support.html</a><span>Каналы помощи и типовые вопросы.</span></div>
+        <div class="link-item"><strong>Политика возвратов</strong><a class="ext" href="https://thetochka.com/refund.html">thetochka.com/refund.html</a><span>Условия возвратов для Premium-подписки.</span></div>
+        <div class="link-item"><strong>Оферта почтового сервиса</strong><a class="ext" href="https://thetochka.com/mail-service-offer.html">mail-service-offer.html</a><span>Для почтовых сценариев TheTochka.</span></div>
+        <div class="link-item"><strong>Юридический пакет (GitHub)</strong><a id="link-legal-repo" href="#">docs/legal/ на GitHub</a><span>Черновики и store-friendly версии.</span></div>
+      </div>
+    </section>
+
+    <!-- ══════ CONTACTS ══════ -->
+    <section id="contacts" aria-labelledby="contacts-h" class="fade-up">
+      <p class="sec-head" id="contacts-h">Контакты</p>
+      <div class="contacts-grid">
+        <div class="contact"><div class="role">Общая поддержка</div><a class="ext" href="mailto:support@thetochka.com">support@thetochka.com</a></div>
+        <div class="contact"><div class="role">Конфиденциальность</div><a class="ext" href="mailto:privacy@thetochka.com">privacy@thetochka.com</a></div>
+        <div class="contact"><div class="role">Удаление данных</div><a class="ext" href="mailto:delete@thetochka.com">delete@thetochka.com</a></div>
+        <div class="contact"><div class="role">Правовые вопросы</div><a class="ext" href="mailto:legal@thetochka.com">legal@thetochka.com</a></div>
+      </div>
+    </section>
+
+    <!-- ══════ TECH ══════ -->
+    <section id="tech" aria-labelledby="tech-h" class="fade-up">
+      <p class="sec-head" id="tech-h">Технический стек и инфраструктура</p>
+      <div class="stack-tags">
+        <span class="tag a">Flutter</span>
+        <span class="tag a">Dart</span>
+        <span class="tag g">Firebase</span>
+        <span class="tag g">RevenueCat</span>
+        <span class="tag">VPS API</span>
+        <span class="tag">Swift (iOS)</span>
+        <span class="tag">Kotlin (Android)</span>
+        <span class="tag">Remote Config</span>
+        <span class="tag">Firebase RTDB</span>
+        <span class="tag">OpenAPI</span>
+      </div>
+      <hr class="shr" />
+      <div class="link-grid c2">
+        <div class="link-item">
+          <strong>Публичный API (prod)</strong>
+          <a class="ext" href="https://api.tochka.email/">api.tochka.email</a>
+          <span>Базовый URL клиента. VPS-инфраструктура TheTochka.</span>
+        </div>
+        <div class="link-item">
+          <strong>Firebase RTDB (europe-west1)</strong>
+          <code style="word-break:break-all;font-size:.77rem">tocka-44a2e-default-rtdb.europe-west1.firebasedatabase.app</code>
+          <span>Публичный endpoint клиентской конфигурации.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ DEVELOPERS ══════ -->
+    <section id="developers" aria-labelledby="dev-h" class="fade-up">
+      <p class="sec-head" id="dev-h">Разработка и документация</p>
+      <div class="prose" style="margin-bottom:1rem">
+        <p>Монорепозиторий содержит Flutter-клиент, серверную часть VPS API, юридические тексты, OpenAPI-схемы и чеклисты релиза.</p>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header"><div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div></div>
+        <button class="copy-btn" id="copyBtn">Копировать</button>
+        <pre><code id="termCode">git clone git@github.com:TheTochka/TheTochka.git
+cd TheTochka
+flutter pub get
+flutter run</code></pre>
+      </div>
+
+      <div class="link-grid c2" style="margin-top:1.5rem">
+        <div class="link-item"><strong>Деплой маркетплейса</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/DEPLOY_MARKETPLACE_INTEGRATION.md" href="#">DEPLOY_MARKETPLACE_INTEGRATION.md</a></div>
+        <div class="link-item"><strong>Firebase и сервер</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/FIREBASE_SERVER_SETUP.md" href="#">FIREBASE_SERVER_SETUP.md</a></div>
+        <div class="link-item"><strong>Чеклист релиза</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/RELEASE_CHECKLIST.md" href="#">RELEASE_CHECKLIST.md</a></div>
+        <div class="link-item"><strong>Partner API</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/PARTNER_API.md" href="#">PARTNER_API.md</a></div>
+        <div class="link-item"><strong>Онбординг партнёра</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/PARTNER_ONBOARDING.md" href="#">PARTNER_ONBOARDING.md</a></div>
+        <div class="link-item"><strong>Пользовательский флоу</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/MARKETPLACE_USER_FLOW.md" href="#">MARKETPLACE_USER_FLOW.md</a></div>
+        <div class="link-item"><strong>OpenAPI Partner</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/openapi/partner-api.yaml" href="#">partner-api.yaml</a></div>
+        <div class="link-item"><strong>OpenAPI v1</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/openapi/v1.yaml" href="#">v1.yaml</a></div>
+        <div class="link-item"><strong>Мастер-план бэкенда</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/BACKEND_MASTER_PLAN.md" href="#">BACKEND_MASTER_PLAN.md</a></div>
+        <div class="link-item"><strong>Чеклист безопасности</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/SECURITY_CHECKLIST.md" href="#">SECURITY_CHECKLIST.md</a></div>
+        <div class="link-item"><strong>Юридическая концепция (RU)</strong><a class="needs-repo ext" data-suffix="/blob/main/docs/legal/README_RU.md" href="#">README_RU.md</a></div>
+        <div class="link-item"><strong>Корневой README</strong><a id="link-repo" class="needs-repo ext" data-suffix="/blob/main/README.md" href="#">README.md</a></div>
+      </div>
+
+      <p id="repo-hint" class="visible" style="margin-top:1rem">
+        <strong>Настройка GitHub:</strong> в теге <code>&lt;html&gt;</code> добавьте
+        <code>data-github-repo="https://github.com/TheTochka/TheTochka"</code> — оживут все ссылки выше.
+      </p>
+    </section>
+
+    <!-- ══════ SEO CONTENT ══════ -->
+    <section id="seo-content" aria-labelledby="seo-h" class="fade-up">
+      <p class="sec-head" id="seo-h">О VPN-маркетплейсе подробнее</p>
+      <div class="prose">
+        <h3>Как выбрать лучший VPN в 2026 году</h3>
+        <p>
+          При выборе VPN важно учитывать: <strong>протоколы шифрования</strong> (WireGuard — максимальная скорость;
+          OpenVPN — проверенная надёжность; IKEv2 — оптимален для мобильных устройств),
+          <strong>юрисдикцию провайдера</strong> (влияет на политику логов), <strong>количество серверов и стран</strong>,
+          наличие kill switch, split tunneling и SLA. TheTochka структурирует эти параметры в фильтрах каталога.
+        </p>
+        <h3>VPN для бизнеса: что важно знать</h3>
+        <p>
+          Для <strong>корпоративного VPN</strong> критично: поддержка нескольких одновременных подключений,
+          централизованное управление аккаунтами, совместимость с MDM и соответствие <strong>GDPR / 152-ФЗ</strong>.
+          Сценарий запроса КП позволяет передать провайдеру эти требования структурированно.
+        </p>
+        <h3>Отзывы о VPN-провайдерах: почему важны независимые источники</h3>
+        <p>
+          Большинство крупных обзорных сайтов работают по партнёрской модели — рейтинги формируются с учётом комиссий,
+          а не реального опыта. TheTochka строит репутационную систему на верифицированных отзывах пользователей
+          приложения без аффилиата с провайдерами.
+        </p>
+        <h3>TheTochka API для разработчиков и партнёров</h3>
+        <p>
+          Публичный API (<a class="ext" href="https://api.tochka.email/">api.tochka.email</a>) открыт для партнёрских
+          интеграций. OpenAPI-схемы и документация — в репозитории. Для подключения как провайдер — см.
+          <a href="#contacts">контакты TheTochka</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════ FAQ ══════ -->
+    <section id="faq" aria-labelledby="faq-h" class="fade-up">
+      <p class="sec-head" id="faq-h">Частые вопросы</p>
+      <details open>
+        <summary>Что такое TheTochka и чем отличается от VPN?</summary>
+        <p>TheTochka — маркетплейс, а не VPN-сервис. Помогаем выбрать провайдера через каталог, отзывы и запрос КП. Договор и оплата — с выбранным провайдером.</p>
+      </details>
+      <details>
+        <summary>Как выбрать VPN через TheTochka?</summary>
+        <p>Откройте каталог → примените фильтры → изучите карточку с отзывами → запросите КП или перейдите к провайдеру. Около 2 минут.</p>
+      </details>
+      <details>
+        <summary>Приложение платное?</summary>
+        <p>Базовый доступ к каталогу бесплатен. Premium-подписка открывает расширенные функции; оплата через App Store / Google Play.</p>
+      </details>
+      <details>
+        <summary>Где скачать TheTochka?</summary>
+        <p>Android — <a class="ext" href="https://play.google.com/store/apps/details?id=com.direct.thetochka">Google Play</a>. iOS — поиск «TheTochka» в App Store.</p>
+      </details>
+      <details>
+        <summary>Кто отвечает за качество VPN-подключения?</summary>
+        <p>Провайдер, которого вы выбрали. SLA, скорость и поддержка линии — на стороне выбранного сервиса.</p>
+      </details>
+      <details>
+        <summary>Как удалить аккаунт и данные?</summary>
+        <p>В приложении есть сценарий удаления. Дополнительно — <a href="mailto:delete@thetochka.com">delete@thetochka.com</a>.</p>
+      </details>
+      <details>
+        <summary>Эта страница — официальный сайт?</summary>
+        <p>Это техническая страница на GitHub Pages из каталога <code>/docs</code>. Маркетинговый сайт — <a class="ext" href="https://thetochka.com/">thetochka.com</a>.</p>
+      </details>
+    </section>
+
+    <!-- ══════ FOOTER ══════ -->
+    <footer class="site-footer fade-up">
+      <nav aria-label="Быстрые ссылки">
+        <a class="ext" href="https://thetochka.com/">thetochka.com</a>
+        <a class="ext" href="https://api.tochka.email/">api.tochka.email</a>
+        <a class="ext" href="https://play.google.com/store/apps/details?id=com.direct.thetochka">Google Play</a>
+        <a class="ext" href="https://apps.apple.com/us/search?term=TheTochka">App Store</a>
+        <a id="link-footer-repo" href="#">GitHub</a>
+        <a class="ext" href="https://thetochka.com/support.html">Поддержка</a>
+        <a class="ext" href="https://thetochka.com/privacy.html">Конфиденциальность</a>
+        <a class="ext" href="https://thetochka.com/terms.html">Условия</a>
+      </nav>
+      <p>
+        GitHub Pages из каталога <code>/docs</code>.
+        При расхождении с <a class="ext" href="https://thetochka.com/">thetochka.com</a> приоритет — за опубликованными там версиями документов.
+      </p>
+      <p class="footer-copy">© 2026 TheTochka — маркетплейс VPN-провайдеров. Flutter · Firebase · RevenueCat · VPS API.</p>
+    </footer>
+  </div>
+
+  <!-- ══════ STICKY CTA ══════ -->
+  <div class="sticky-cta" id="sticky-cta" role="complementary" aria-label="Скачать приложение">
+    <span class="s-label">TheTochka — маркетплейс VPN</span>
+    <a class="s-btn ext" href="https://play.google.com/store/apps/details?id=com.direct.thetochka">Скачать</a>
+    <button class="s-close" id="sticky-close" aria-label="Закрыть">×</button>
+  </div>
+
+  <script>
+    /* ── Repo links ── */
+    (function () {
+      var raw  = document.documentElement.getAttribute("data-github-repo") || "";
+      var repo = raw.replace(/\/+$/, "");
+      var hint = document.getElementById("repo-hint");
+      var ok   = repo && /^https:\/\/github\.com\//i.test(repo);
+      function block(el) { if (!el) return; el.addEventListener("click", function(e){ e.preventDefault(); }); }
+      if (ok) {
+        if (hint) hint.classList.remove("visible");
+        var legal = document.getElementById("link-legal-repo");
+        if (legal) legal.href = repo + "/tree/main/docs/legal";
+        ["link-repo", "link-footer-repo"].forEach(function(id){
+          var el = document.getElementById(id); if (el) el.href = repo;
+        });
+        document.querySelectorAll("a.needs-repo").forEach(function(a){
+          var s = a.getAttribute("data-suffix"); if (s) a.href = repo + s;
+        });
+      } else {
+        ["link-legal-repo","link-repo","link-footer-repo"].forEach(function(id){ block(document.getElementById(id)); });
+        document.querySelectorAll("a.needs-repo").forEach(block);
+      }
+    })();
+
+    /* ── Theme toggle ── */
+    (function () {
+      var html   = document.documentElement;
+      var btn    = document.getElementById("themeToggle");
+      if (!btn) return;
+      var stored = localStorage.getItem("theme");
+      if (stored) {
+        html.setAttribute("data-theme", stored);
+      } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        html.setAttribute("data-theme", "light");
+      }
+      btn.addEventListener("click", function () {
+        var next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    })();
+
+    /* ── Mobile menu ── */
+    (function () {
+      var btn   = document.getElementById("menuBtn");
+      var links = document.getElementById("navLinks");
+      if (!btn || !links) return;
+      btn.addEventListener("click", function () {
+        links.classList.toggle("open");
+        btn.textContent = links.classList.contains("open") ? "✕" : "☰";
+      });
+      links.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          links.classList.remove("open"); btn.textContent = "☰";
+        });
+      });
+    })();
+
+    /* ── Copy terminal ── */
+    (function () {
+      var btn  = document.getElementById("copyBtn");
+      var code = document.getElementById("termCode");
+      if (!btn || !code) return;
+      btn.addEventListener("click", function () {
+        navigator.clipboard.writeText(code.innerText.trim()).then(function () {
+          btn.textContent = "Скопировано!";
+          setTimeout(function () { btn.textContent = "Копировать"; }, 2000);
+        }).catch(function () {
+          btn.textContent = "Не удалось";
+          setTimeout(function () { btn.textContent = "Копировать"; }, 2000);
+        });
+      });
+    })();
+
+    /* ── Scroll reveal ── */
+    (function () {
+      var els = document.querySelectorAll(".fade-up");
+      if (!window.IntersectionObserver) { els.forEach(function(e){ e.classList.add("visible"); }); return; }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add("visible"); io.unobserve(en.target); } });
+      }, { threshold: 0.07 });
+      els.forEach(function(e){ io.observe(e); });
+    })();
+
+    /* ── Animated counters ── */
+    (function () {
+      var nums = document.querySelectorAll(".stat-num[data-target]");
+      if (!window.IntersectionObserver) { nums.forEach(function(el){ el.textContent = el.dataset.target + (el.dataset.suffix||""); }); return; }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (!en.isIntersecting) return;
+          var el = en.target, target = parseInt(el.dataset.target, 10), suffix = el.dataset.suffix || "", start = performance.now();
+          function step(now) {
+            var p = Math.min((now - start) / 1400, 1);
+            el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target) + suffix;
+            if (p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+          io.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+      nums.forEach(function(el){ io.observe(el); });
+    })();
+
+    /* ── Sticky CTA ── */
+    (function () {
+      var cta = document.getElementById("sticky-cta");
+      var cls = document.getElementById("sticky-close");
+      if (!cta) return;
+      var shown = false, dismissed = false;
+      window.addEventListener("scroll", function(){
+        if (dismissed) return;
+        var y = window.scrollY;
+        if (!shown && y > 600)  { cta.classList.add("show"); shown = true; }
+        if (shown  && y < 300)  { cta.classList.remove("show"); shown = false; }
+      }, { passive: true });
+      if (cls) cls.addEventListener("click", function(){ cta.classList.remove("show"); dismissed = true; });
+    })();
+  </script>
+</body>
+</html>
