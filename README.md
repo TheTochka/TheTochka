@@ -1,6 +1,6 @@
-<!-- Витрина репозитория: упрощённый макет под ограничения GitHub. Полный интерактивный лендинг — docs/index.html (GitHub Pages). -->
+<!-- Витрина репозитория: упрощённый макет под ограничения GitHub. Полный интерактивный лендинг — thetochka.com -->
 <p align="center">
-  <a href="https://thetochka.github.io/TheTochka/">
+  <a href="https://thetochka.com/">
     <img src="https://thetochka.com/og-image.png" alt="TheTochka — маркетплейс VPN" width="920" />
   </a>
 </p>
@@ -48,17 +48,9 @@
 
 ---
 
-## Полный лендинг (как на сайте)
+## Полный лендинг
 
-Интерактивная страница с тёмной/светлой темой, навигацией и всеми блоками — это тот же макет, что и на **thetochka.com**:
-
-| Вариант | Ссылка |
-|:--|:--|
-| **Исходник в репозитории** | [docs/index.html](docs/index.html) |
-| **GitHub Pages** (после включения *Settings → Pages → `/docs`*) | [thetochka.github.io/TheTochka](https://thetochka.github.io/TheTochka/) |
-| **Продакшен-сайт** | [thetochka.com](https://thetochka.com/) |
-
-Документация и юридические материалы — в папке [docs/](docs/).
+Интерактивная страница с тёмной/светлой темой, навигацией и всеми блоками — на **[thetochka.com](https://thetochka.com/)**.
 
 ---
 
